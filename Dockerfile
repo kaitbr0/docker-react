@@ -8,7 +8,7 @@ RUN yarn install
 
 COPY . .
 
-CMD ["yarn", "build"]
+RUN yarn build
 
 FROM nginx
 EXPOSE 80
